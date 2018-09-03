@@ -1,3 +1,19 @@
+.walnut * {
+  font-family: "Open Sans", sans-serif;
+}
+.walnut .is-hidden {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .walnut .desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .walnut .mobile {
+    display: none;
+  }
+}
 .walnut .header {
   height: 60px;
   position: fixed;
@@ -5,7 +21,142 @@
   width: 100%;
   left: 0px;
   background: #fff;
+  z-index: 9999;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.walnut .header .logo {
+  height: 48px;
+  padding-top: 10px;
+  padding-left: 5%;
+}
+.walnut .header .hamburger {
+  float: right;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.walnut .header .hamburger .bar {
+  width: 30px;
+  height: 1px;
+  background-color: #666;
+  position: absolute;
+  box-sizing: border-box;
+}
+.walnut .header .hamburger .bar:first-child {
+  top: 20px;
+}
+.walnut .header .hamburger .bar:nth-child(2) {
+  top: 30px;
+}
+.walnut .header .hamburger .bar:nth-child(3) {
+  top: 40px;
+}
+.walnut .header .header-items {
+  color: #666;
+  float: right;
+  font-size: 18px;
+  padding-right: 0px;
+}
+.walnut .header .header-items .item {
+  color: #666;
+  margin-right: 32px;
+  height: 60px;
+  display: inline-block;
+  line-height: 60px;
+  text-decoration: none;
+}
+.walnut .header .header-items .item:hover {
+  border-bottom: solid 3px #615aa7;
+  color: #615aa7;
+}
+@media (min-width: 992px) {
+  .walnut .header .header-items {
+    padding-right: 10%;
+  }
+}
+.walnut .header #header-items-mobile {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+  background: #615aa7;
+}
+.walnut .header #header-items-mobile .item {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: left;
+  display: block;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+  height: 60px;
+  line-height: 60px;
+  text-decoration: none;
+}
+.walnut .header #header-items-mobile .item:last-child {
+  border-bottom: none;
+}
+.walnut .section-container {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.walnut .section-container .section-title {
+  color: #615aa7;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.walnut .section-container h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.walnut .section-container p {
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .walnut .section-container {
+    padding-top: 60px;
+  }
+}
+.walnut .about-us-section {
+  margin-top: 60px;
+}
+.walnut .about-us-section .left-icon-wrapper .content {
+  padding: 15px;
+}
+.walnut .about-us-section .left-icon-wrapper .image-holder {
+  border-radius: 50%;
+  background-color: #f7f6fa;
+  width: 106px;
+  height: 106px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+.walnut .about-us-section .left-icon-wrapper .image-holder .image {
+  width: 46px;
+  height: 56px;
+  top: calc(50% - 20px);
+  right: calc(50% - 23px);
+  position: absolute;
+}
+.walnut .about-us-section .left-icon-wrapper .image-holder .image img {
+  width: 100%;
+  height: 100%;
+}
+.walnut .our-services-section {
+  background-color: rgba(97, 90, 167, 0.06);
+}
+.walnut .team-section .row-1 {
+  margin-bottom: 30px;
+}
+.walnut .contact-section {
+  background-color: rgba(97, 90, 167, 0.06);
+}
+.walnut .client-section {
+  background-color: rgba(97, 90, 167, 0.06);
 }
 
 /*# sourceMappingURL=index.css.map */

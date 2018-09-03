@@ -1,4 +1,20 @@
 .walnut {
+    * {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .is-hidden {
+        display: none !important;
+    }
+    .desktop {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    .mobile {
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
     .header {
         height: 60px;
         position: fixed;
@@ -6,6 +22,154 @@
         width: 100%;
         left: 0px;
         background: #fff;
+        z-index: 9999;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+        .logo {
+            height: 48px;
+            padding-top: 10px;
+            padding-left: 5%;
+        }
+        .hamburger {
+            float: right;
+            height: 40px;
+            width: 40px;
+            // background: black;
+            margin-top: 10px;
+            margin-right: 10px;
+            .bar {
+                width: 30px;
+                height: 1px;
+                background-color: #666;
+                position: absolute;
+                box-sizing: border-box;
+                &:first-child {
+                    top: 20px;
+                }
+                &:nth-child(2) {
+                    top: 30px;
+                }
+                &:nth-child(3) {
+                    top: 40px;
+                }
+            }
+        }
+        .header-items {
+            color: #666;
+            float: right;
+            font-size: 18px;
+            padding-right: 0px;
+            .item {
+                color: #666;
+                margin-right: 32px;
+                height: 60px;
+                display: inline-block;
+                line-height: 60px;
+                text-decoration: none;
+                &:hover {
+                    border-bottom: solid 3px #615aa7;
+                    color: #615aa7;
+                }
+            }
+            &.mobile {
+                
+            }
+            @media (min-width: 992px) {
+                padding-right: 10%;
+            }
+        }
+        #header-items-mobile {
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            width: 100%;
+            background: rgb(97, 90, 167);
+            // padding-bottom: 20px;
+            .item {
+                width: 80%;
+                margin: 0 auto;
+                color: #fff;
+                text-align: left;
+                display: block;
+                border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+                height: 60px;
+                line-height: 60px;
+                text-decoration: none;
+                &:last-child {
+                    border-bottom: none; 
+                }
+            }
+        }
+    }
+    .section-container {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        .section-title {
+            // font-size: 35px;
+            color: #615aa7;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            text-align: justify;
+            font-weight: 300;
+        }
+        @media (min-width: 768px) {
+            padding-top: 60px;
+            // padding-bottom: 20px;
+        }
+    }
+    .about-us-section {
+        margin-top: 60px;
+        .left-icon-wrapper {
+            .content {
+                padding: 15px;
+            }
+            .image-holder {
+                border-radius: 50%;
+                background-color: #f7f6fa;
+                width: 106px;
+                height: 106px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                position: relative;
+                .image {
+                    width: 46px;
+                    height: 56px;
+                    top: calc(50% - 20px);
+                    right: calc(50% - 23px);
+                    position: absolute;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            
+        }
+    }
+    .our-services-section {
+        background-color: rgba(97, 90, 167, 0.06);
+    }
+    .team-section {
+        .row-1 {
+            margin-bottom: 30px;
+        }
+        .row-2 {
+            
+        }
+    }
+    .contact-section {
+        background-color: rgba(97, 90, 167, 0.06); 
+    }
+    .client-section {
+        background-color: rgba(97, 90, 167, 0.06); 
     }
 }

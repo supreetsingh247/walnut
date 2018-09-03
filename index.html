@@ -8,27 +8,243 @@
     <meta name="robots" content="INDEX, FOLLOW"/>
 
     <!-- Favicons-->
-    <!-- <link rel="apple-touch-icon" sizes="57x57" href="/static/images/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/static/images/favicon/apple-touch-icon-144x144.png">
-
-    <link rel="icon" type="image/png" href="/static/images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/static/images/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/static/images/favicon/favicon-194x194.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/static/images/favicon/favicon-16x16.png" sizes="16x16">
-
-    <link rel="shortcut icon" href="/static/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
      -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
      <link rel="stylesheet" href="static/index.css">
 </head>
 <body>
     <div class="walnut">
         <div class="header">
-
+            <img class="logo" src="static/images/logo.png" />
+            <div class="header-items desktop">
+                <a href="#about-us" class="item">About Us</a>
+                <a href="#services" class="item">Services</a>
+                <a href="#team" class="item">Team</a>
+                <a href="#contact-us" class="item">Contact Us</a>
+                <a href="#clientele" class="item">Clientele</a>
+            </div>
+            <div class="hamburger mobile" id="hamburger">
+                <div class="bar animate"></div>
+                <div class="bar animate"></div>
+                <div class="bar animate"></div>
+            </div>
+            <div class="header-items-mobile mobile is-hidden" id="header-items-mobile">
+                <a href="#about-us" class="item">About Us</a>
+                <a href="#services" class="item">Services</a>
+                <a href="#team" class="item">Team</a>
+                <a href="#contact-us" class="item">Contact Us</a>
+                <a href="#clientele" class="item">Clientele</a>
+            </div>
+        </div>
+        <a name="about-us"></a>
+        <div class="about-us-section container section-container">
+            <h2 class="section-title">Why Walnut Advisors</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="left-icon-wrapper">
+                        <div class="image-holder">
+                            <div class="image teacher">
+                                <img src="static/images/execution.svg" alt="teacher-icon">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Bridging the execution gap</h3>
+                            <p>We identify solutions which are holistic in approach. Our past learning and experience suggest that great companies emerge when plans are executed perfectly, but business conditions always create challenges to detour our execution. We provide a helping hand to hold you though the crest and trough of economic cycles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="left-icon-wrapper">
+                        <div class="image-holder">
+                            <div class="image teacher">
+                                <img src="static/images/data.svg" alt="teacher-icon">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Data Centic Approach</h3>
+                            <p>Our approach is data led, we believe to empower decision of enterpreneurs backed by numbers and not their instincts alone. We capitalise on others learning experiences than reinventing the wheel. Our team creates mechanism to decipher collected data in useful information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="left-icon-wrapper">
+                        <div class="image-holder">
+                            <div class="image teacher">
+                                <img src="static/images/partner.svg" alt="teacher-icon">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Partners</h3>
+                            <p>We are involved in the business as a partner and not an external advisor or consultant. We believe that without stepping in the shoes of an enterpreneur, the solutions offered are either impractical or temporary, which may instigate other issues to crop up.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="services"></a>
+        <div class="container-fluid our-services-section section-container">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                        <div class="left-icon-wrapper">
+                            <div class="image-holder">
+                                <div class="image teacher">
+                                    <!-- <img src="static/images/execution.svg" alt="teacher-icon"> -->
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Assurance & Advisory</h3>
+                                <p>We offer an independent professional service, with the goal of presenting and interpreting collected data in holistic information, so that decision makers can make more informed, data represented decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <div class="left-icon-wrapper">
+                            <div class="image-holder">
+                                <div class="image teacher">
+                                    <!-- <img src="static/images/execution.svg" alt="teacher-icon"> -->
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Financial Services</h3>
+                                <p>We help our clients through the all phases of a transaction, from getting industry insights, to preparing deck, to creating a financial model, to valuation assessment, to transaction due diligence and finally, implementation and closure of the transaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <div class="left-icon-wrapper">
+                            <div class="image-holder">
+                                <div class="image teacher">
+                                    <!-- <img src="static/images/execution.svg" alt="teacher-icon"> -->
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Financial Restructuring</h3>
+                                <p>For any business to turn successful, a business has to execute a series of ideas but not every idea is execuuted perfectly leading to stressed business condition. We offer services to enable our clients to minimise  their risk and restrict their losses to address such unforseen situations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <div class="left-icon-wrapper">
+                            <div class="image-holder">
+                                <div class="image teacher">
+                                    <!-- <img src="static/images/execution.svg" alt="teacher-icon"> -->
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Corporate Finance Advisory</h3>
+                                <p>We work with a diverse set of clients to simplify all aspects of fundraising, right from early stage funding to growth to partial and complete exit. Our deep knowledge of the market and strong network enable us to identify a partner who is aligned with the organisation objective, vision and mission. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="team"></a>
+        <div class="team-section container section-container">
+            <h2 class="section-title">The Team</h2>
+            <div class="row row-1">
+                <div class="col-sm-12 col-md-4">
+                    <div class="left-icon-wrapper">
+                        <div class="image-holder">
+                            <div class="image teacher">
+                                <img src="static/images/execution.svg" alt="teacher-icon">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Pratibha Sharma</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="left-icon-wrapper">
+                        <div class="image-holder">
+                            <div class="image teacher">
+                                <img src="static/images/execution.svg" alt="teacher-icon">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Prateek Nalwaya</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="left-icon-wrapper">
+                        <div class="image-holder">
+                            <div class="image teacher">
+                                <img src="static/images/execution.svg" alt="teacher-icon">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Ankit Lakhotia</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="left-icon-wrapper">
+                        <div class="image-holder">
+                            <div class="image teacher">
+                                <img src="static/images/execution.svg" alt="teacher-icon">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Shalinee Daga</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="left-icon-wrapper">
+                        <div class="image-holder">
+                            <div class="image teacher">
+                                <img src="static/images/execution.svg" alt="teacher-icon">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Vaibhav Gupta</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a name="contact-us"></a>
+        <div></div>
+        <a name="clientele"></a>
+        <div class="client-section container-fluid section-container">
+            <div class="container">
+                <h2 class="section-title">Our Clientele</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="static/index.js"></script>
 </body>
 </html>
