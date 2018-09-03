@@ -267,7 +267,20 @@
 .walnut .team-section .row-1 {
   margin-bottom: 30px;
 }
-.walnut .contact-section {
+.walnut .contact-section .address {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 290px;
+}
+.walnut .contact-section form .container-fields {
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -moz-flex;
+}
+.walnut .contact-section .form-section {
+  padding: 20px;
   background-color: rgba(97, 90, 167, 0.06);
 }
 .walnut .client-section {
@@ -302,6 +315,67 @@
   .walnut .client-section .image-row-1 img {
     margin-right: 50px;
   }
+}
+.walnut input, .walnut textarea {
+  padding-left: 15px;
+  margin-bottom: 10px;
+  border: solid 1px #dedede;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #464646;
+}
+.walnut input {
+  height: 45px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .walnut input {
+    width: 90%;
+  }
+}
+.walnut textarea {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .walnut textarea {
+    width: 95%;
+  }
+}
+.walnut input[type=submit] {
+  background: #615aa7;
+  cursor: pointer;
+  color: #fff;
+  height: 45px;
+  border: none;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .walnut input[type=submit] {
+    width: 280px;
+  }
+}
+.walnut input:focus,
+.walnut select:focus,
+.walnut textarea:focus,
+.walnut button:focus {
+  outline: none;
+}
+.walnut ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #666;
+  opacity: 1;
+  /* Firefox */
+}
+.walnut :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #666;
+}
+.walnut ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #666;
 }
 
 /*# sourceMappingURL=index.css.map */

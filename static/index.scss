@@ -300,7 +300,31 @@
         }
     }
     .contact-section {
-        background-color: rgba(97, 90, 167, 0.06); 
+        // background-color: rgba(97, 90, 167, 0.06); 
+        .address {
+            margin: 0 auto;
+            margin-bottom: 32px;
+            max-width: 290px;
+        }
+        form {
+            .container-fields {
+                // display: inline-block;
+                // @media (min-width: 768px) {
+                    display: -webkit-flex;
+                    display: flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: -moz-flex;
+                // }
+            }
+        }
+        .form-section {
+            padding: 20px;
+            background-color: rgba(97, 90, 167, 0.06);
+        }
+        .lower-section {
+            // display: flex;
+        }
     }
     .client-section {
         background-color: rgba(97, 90, 167, 0.06); 
@@ -332,5 +356,58 @@
                 }
             }
         }
+    }
+    input, textarea {
+        padding-left: 15px;
+        margin-bottom: 10px;
+        border: solid 1px #dedede;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
+        font-size: 14px;
+        color: #464646;
+    }
+    input {
+        height: 45px;
+        width: 100%;
+        @media (min-width: 768px) {
+            width: 90%;
+        }
+    }
+    textarea {
+        width: 100%;
+        @media (min-width: 768px) {
+            width: 95%;
+        }
+    }
+    input[type=submit] {
+        background: #615aa7;
+        cursor: pointer;
+        color: #fff;
+        height: 45px;
+        border: none;
+        width: 100%;
+        @media (min-width: 768px) {
+            width: 280px;
+        }
+    }
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #666;
+        opacity: 1; /* Firefox */
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #666;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #666;
     }
 }
