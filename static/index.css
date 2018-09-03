@@ -80,27 +80,8 @@
   }
 }
 .walnut .header.after-scroll {
-  background: #fff;
+  background: #615aa7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.walnut .header.after-scroll .logo-white {
-  display: none;
-}
-.walnut .header.after-scroll .logo {
-  display: inline-block;
-}
-.walnut .header.after-scroll .header-items {
-  color: #666;
-}
-.walnut .header.after-scroll .header-items .item {
-  color: #666;
-}
-.walnut .header.after-scroll .header-items .item:hover {
-  border-bottom: solid 3px #615aa7;
-  color: #615aa7;
-}
-.walnut .header.after-scroll .hamburger .bar {
-  background-color: #666;
 }
 .walnut .header #header-items-mobile {
   position: absolute;
@@ -156,16 +137,17 @@
   background-blend-mode: multiply;
 }
 .walnut .top-section .moto-container {
-  float: right;
+  margin: 0 auto;
   color: #fff;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 33%;
   max-width: 300px;
 }
 @media (min-width: 768px) {
   .walnut .top-section .moto-container {
     max-width: 600px;
     padding-top: 10%;
+    float: right;
   }
 }
 .walnut .top-section .title-moto {
@@ -248,6 +230,10 @@
   bottom: -600px;
   left: 0px;
   transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
   padding: 15px;
   background-color: #615aa7;
   width: 100%;
@@ -286,6 +272,36 @@
 }
 .walnut .client-section {
   background-color: rgba(97, 90, 167, 0.06);
+}
+.walnut .client-section .image-row-1 {
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -moz-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+}
+.walnut .client-section .image-row-1 img {
+  height: 70px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+.walnut .client-section .image-row-1 img:last-child {
+  margin-right: 0px;
+}
+@media (min-width: 768px) {
+  .walnut .client-section .image-row-1 img {
+    margin-right: 50px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
