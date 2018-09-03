@@ -155,27 +155,41 @@
     }
     .top-section {
         // margin-top: 60px;
-        height: 300px;
-        background-color: rgba(97, 90, 167, 1);
-        background-image: url('images/corp-advisory.jpg');
+        height: 400px;
+        background-color: rgba(97, 90, 167, 0.6);
+        background-image: url('images/cover.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: multiply;
-        .moto {
-            max-width: 300px;
-            margin: 0 auto;
+        .moto-container {
+            float: right;
             color: #fff;
             text-align: center;
-            font-size: 18px;
-            padding-top: 27%;
+            padding-top: 30%;
+            max-width: 300px;
             @media (min-width: 768px) {
                 max-width: 600px;
-                font-size: 29px;
                 padding-top: 10%;
             }
         }
+        .title-moto {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            line-height: 1.1;
+            @media (min-width: 768px) {
+                font-size: 50px;
+                margin-bottom: 32px;
+            }
+        }
+        .moto {
+            font-size: 14px;
+            @media (min-width: 768px) {
+                font-size: 20px;
+            }
+        }
         @media (min-width: 768px) {
-            height: 500px;
+            height: 600px;
         }
     }
     .about-us-section {
