@@ -51,5 +51,17 @@
             });
         }
     }
-    
+    $(window).scroll(function() {
+        var topPos = $(window).scrollTop();
+        var header = document.querySelector('.header');
+        if(topPos > 100) {
+            if(header) {
+                header.classList.add('after-scroll');
+            }
+        } else {
+            if(header) {
+                header.classList.remove('after-scroll');
+            }
+        }
+    })
 }());

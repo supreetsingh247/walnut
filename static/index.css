@@ -20,11 +20,15 @@
   top: 0px;
   width: 100%;
   left: 0px;
-  background: #fff;
   z-index: 9999;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .walnut .header .logo {
+  height: 48px;
+  padding-top: 10px;
+  padding-left: 5%;
+  display: none;
+}
+.walnut .header .logo-white {
   height: 48px;
   padding-top: 10px;
   padding-left: 5%;
@@ -39,7 +43,7 @@
 .walnut .header .hamburger .bar {
   width: 30px;
   height: 1px;
-  background-color: #666;
+  background-color: #fff;
   position: absolute;
   box-sizing: border-box;
 }
@@ -53,13 +57,13 @@
   top: 40px;
 }
 .walnut .header .header-items {
-  color: #666;
+  color: #fff;
   float: right;
   font-size: 18px;
   padding-right: 0px;
 }
 .walnut .header .header-items .item {
-  color: #666;
+  color: #fff;
   margin-right: 32px;
   height: 60px;
   display: inline-block;
@@ -67,13 +71,36 @@
   text-decoration: none;
 }
 .walnut .header .header-items .item:hover {
-  border-bottom: solid 3px #615aa7;
-  color: #615aa7;
+  border-bottom: solid 3px #fff;
+  color: #fff;
 }
 @media (min-width: 992px) {
   .walnut .header .header-items {
     padding-right: 10%;
   }
+}
+.walnut .header.after-scroll {
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.walnut .header.after-scroll .logo-white {
+  display: none;
+}
+.walnut .header.after-scroll .logo {
+  display: inline-block;
+}
+.walnut .header.after-scroll .header-items {
+  color: #666;
+}
+.walnut .header.after-scroll .header-items .item {
+  color: #666;
+}
+.walnut .header.after-scroll .header-items .item:hover {
+  border-bottom: solid 3px #615aa7;
+  color: #615aa7;
+}
+.walnut .header.after-scroll .hamburger .bar {
+  background-color: #666;
 }
 .walnut .header #header-items-mobile {
   position: absolute;
@@ -120,8 +147,33 @@
     padding-top: 60px;
   }
 }
-.walnut .about-us-section {
-  margin-top: 60px;
+.walnut .top-section {
+  height: 300px;
+  background-color: #615aa7;
+  background-image: url("images/corp-advisory.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.walnut .top-section .moto {
+  max-width: 300px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 27%;
+}
+@media (min-width: 768px) {
+  .walnut .top-section .moto {
+    max-width: 600px;
+    font-size: 29px;
+    padding-top: 10%;
+  }
+}
+@media (min-width: 768px) {
+  .walnut .top-section {
+    height: 500px;
+  }
 }
 .walnut .about-us-section .left-icon-wrapper .content {
   padding: 15px;
@@ -148,6 +200,65 @@
 }
 .walnut .our-services-section {
   background-color: rgba(97, 90, 167, 0.06);
+}
+.walnut .our-services-section .image {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.walnut .our-services-section .image img {
+  width: 100%;
+  max-height: 198px;
+}
+@media (min-width: 992px) {
+  .walnut .our-services-section .image img {
+    max-height: 153px;
+  }
+}
+.walnut .team-section .left-icon-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.walnut .team-section .left-icon-wrapper .image {
+  height: 430px;
+  text-align: center;
+}
+.walnut .team-section .left-icon-wrapper .image img {
+  height: 100%;
+}
+.walnut .team-section .left-icon-wrapper .about-overlay {
+  position: absolute;
+  bottom: -600px;
+  left: 0px;
+  transition: all ease-in-out 0.3s;
+  padding: 15px;
+  background-color: #615aa7;
+  width: 100%;
+  color: #fff;
+  border-radius: 8px;
+  overflow: scroll;
+}
+.walnut .team-section .left-icon-wrapper .about-overlay .title {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.walnut .team-section .left-icon-wrapper .about-overlay .sub-title span {
+  font-weight: 300;
+}
+.walnut .team-section .left-icon-wrapper .about-overlay .journey {
+  font-weight: 600;
+}
+.walnut .team-section .left-icon-wrapper .about-overlay .journey span {
+  font-weight: 300;
+}
+.walnut .team-section .left-icon-wrapper .about-overlay .education {
+  font-weight: 600;
+}
+.walnut .team-section .left-icon-wrapper .about-overlay .education span {
+  font-weight: 300;
+}
+.walnut .team-section .left-icon-wrapper:hover .about-overlay {
+  bottom: 0px;
 }
 .walnut .team-section .row-1 {
   margin-bottom: 30px;
