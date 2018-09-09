@@ -244,13 +244,14 @@
             .image {
                 height: 430px;
                 text-align: center;
+                padding-bottom: 20px;
                 img {
                     height: 100%;
                 }
             }
             .about-overlay {
                 position: absolute;
-                bottom: -600px;
+                bottom: -700px;
                 left: 0px;
                 transition: all ease-in-out 0.3s;
                 -webkit-transition: all ease-in-out 0.3s;
